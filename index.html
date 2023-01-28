@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="darkMode">
+        <p class="arrow">=></p>
+        <button class="darkModeButton" onclick="changeTheme()"></button>
+    </div>
+    <section class="calculatorSection">
+        <div class="calculatorContainer">
+            <div class="screenContainer">
+                <div class="screen">
+                    <div class="operationContainer">
+                        <p id="operation"></p>
+                    </div>
+                    <div class="resultContainer">
+                        <p id="result"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="rowContainer">
+                <div class="row" id="rowOne">
+                    <div class="buttonContainer">
+                        <button class="calculatorButton" onclick="ac()">AC</button>
+                    </div>
+                    <div class="buttonContainer">
+                        <button class="calculatorButton" onclick="operation(3)">%</button>
+                    </div>
+                    <div class="buttonContainer">
+                        <button class="calculatorButton" onclick="operation(4)">÷</button>
+                    </div>
+                    <div class="buttonContainer">
+                        <button class="calculatorButton" onclick="operation(7)">+</button>
+                    </div>
+                </div>
+
+                <div class="row" id="rowTwo">
+                    <div class="buttonContainer">
+                        <button class="calculatorButton" onclick="getTotalNumber(7)">7</button>
+                    </div>
+                    <div class="buttonContainer">
+                        <button class="calculatorButton" onclick="getTotalNumber(8)">8</button>
+                    </div>
+                    <div class="buttonContainer">
+                        <button class="calculatorButton" onclick="getTotalNumber(9)">9</button>
+                    </div>
+                    <div class="buttonContainer">
+                        <button class="calculatorButton" onclick="operation(6)">-</button>
+                    </div>
+                </div>
+
+                <div class="row" id="rowThree">
+                    <div class="buttonContainer">
+                        <button class="calculatorButton" onclick="getTotalNumber(4)">4</button>
+                    </div>
+                    <div class="buttonContainer">
+                        <button class="calculatorButton" onclick="getTotalNumber(5)">5</button>
+                    </div>
+                    <div class="buttonContainer">
+                        <button class="calculatorButton" onclick="getTotalNumber(6)">6</button>
+                    </div>
+                    <div class="buttonContainer">
+                        <button class="calculatorButton" onclick="operation(5)">x</button>
+                    </div>
+                </div>
+                
+                <div class="row" id="rowFour">
+                    <div class="buttonContainer">
+                        <button class="calculatorButton" onclick="getTotalNumber(1)">1</button>
+                    </div>
+                    <div class="buttonContainer">
+                        <button class="calculatorButton" onclick="getTotalNumber(2)">2</button>
+                    </div>
+                    <div class="buttonContainer">
+                        <button class="calculatorButton" onclick="getTotalNumber(3)">3</button>
+                    </div>
+                    <div class="buttonContainer">
+                        <button class="calculatorButton" onclick="getTotalNumber(10)">,</button>
+                    </div>
+                </div>
+
+                <div class="row" id="rowFive">
+                    <div class="buttonContainer">
+                        <button class="calculatorButton" onclick="getTotalNumber(0)">0</button>
+                    </div>
+                    <div class="buttonContainer tripleWidthContainer">
+                        <button class="calculatorButton tripleWidthButton" onclick="equal()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
